@@ -7,7 +7,7 @@ export default function TodoList({todos, onRemove, onToggle}) {
   return (
     <ScrollView contentContainerStyle={styles.listContainer}>
       {todos.map( (todo,index) => (
-        <TodoListItem {...todo} index={index} onRemove={onRemove} onToggle={onToggle}/>
+        <TodoListItem key={todo.id} {...todo} index={index} onRemove={onRemove} onToggle={onToggle}/>
       ))}
     </ScrollView>
   );
