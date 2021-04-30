@@ -28,12 +28,12 @@ const CustomDrawerContent = (props) => {
 const DrawerComponent = () => {
   return (
     <Drawer.Navigator
-      initialRouteName="Home"
+      initialRouteName="App"
       drawerType="front"
       drawerPosition='right'
       drawerContent={props => <CustomDrawerContent {...props} />}
     >
-      <Drawer.Screen name="Home" component={StackComponent}/>
+      <Drawer.Screen name="App" component={StackComponent}/>
     </Drawer.Navigator>
   )
 }

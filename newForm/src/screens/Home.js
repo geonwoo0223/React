@@ -11,6 +11,8 @@ import {
 import { Header } from 'react-native-elements'
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import store from '../store';
+
 
 export default class HomeScreen extends React.Component {
 
@@ -19,14 +21,11 @@ export default class HomeScreen extends React.Component {
   }
 
   render() {
+
     return (
       <View style={styles.container}>
-        {/* <Header
-          leftComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-          rightComponent={{ icon: 'menu', color: '#fff' }}
-        /> */}
         <Text>
-          지도가 보여지는 홈화면
+          Hello
         </Text>
         <Button title={"go to About"} onPress={this.startTravel}/>
       </View>

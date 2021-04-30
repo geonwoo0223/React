@@ -5,13 +5,19 @@ import { NavigationContainer } from '@react-navigation/native'
 
 import DrawerComponent from './src/Drawer'
 
+import { Provider } from 'react-redux'
+
+import store from './src/store/index'
+
 export default class App extends React.Component {
 
   render() {
     return (
-      <NavigationContainer>
-        <DrawerComponent />
-      </NavigationContainer>
+      <Provider store={store}>
+        <NavigationContainer>
+          <DrawerComponent />
+        </NavigationContainer>
+      </Provider>
     )
   }
 }
