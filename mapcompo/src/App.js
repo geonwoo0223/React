@@ -17,15 +17,20 @@ class App extends React.Component{
           let container = document.getElementById("map");
           let options = {
             center: new kakao.maps.LatLng(37.506502, 127.053617),
-            level: 7
+            level: 7,
+            
           };
   
           const map = new window.kakao.maps.Map(container, options);
-          
+
+
           var marker = new kakao.maps.Marker({
             position: new kakao.maps.LatLng(37.56812, 126.97869), // 마커의 좌표
             map: map // 마커를 표시할 지도 객체
-        });
+          });
+
+
+
         });
       };
     }

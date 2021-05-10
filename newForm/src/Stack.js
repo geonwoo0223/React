@@ -10,6 +10,7 @@ import HomeScreen from './screens/Home'
 import AboutScreen from './screens/About'
 import LoginScreen from './screens/Login';
 import SignupScreen from './screens/Signup';
+import SettingsScreen from './screens/SettingsScreen';
 
 const Stack = createStackNavigator();
 
@@ -70,6 +71,11 @@ const StackComponent = () => {
       <Stack.Screen 
         name="About"
         component={AboutScreen}
+
+      />
+      <Stack.Screen 
+        name="Settings"
+        component={SettingsScreen}
 
       />
     </Stack.Navigator>

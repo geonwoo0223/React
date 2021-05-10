@@ -15,11 +15,12 @@ import StackComponent from './Stack'
 const Drawer = createDrawerNavigator();
 
 const CustomDrawerContent = (props) => {
+
   return (
     <DrawerContentScrollView {...props}>
-      <DrawerItem 
-        label="설정"
-      />
+      <TouchableOpacity onPress={() => props.navigation.navigate("Settings")} >
+        <Text>누르면 설정으로</Text>
+      </TouchableOpacity>
     </DrawerContentScrollView>
   )
 }

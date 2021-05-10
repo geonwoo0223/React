@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">kakaoModule</string>
+    <string name="kakao_app_key">00004e0b0b224040398c9ef159004b6b</string>
+</resources>
