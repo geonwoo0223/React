@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'kakaoMap' do
+target 'kakaomap' do
   config = use_native_modules!
 
   use_react_native!(
@@ -12,9 +12,7 @@ target 'kakaoMap' do
     :hermes_enabled => false
   )
 
-  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
-
-  target 'kakaoMapTests' do
+  target 'kakaomapTests' do
     inherit! :complete
     # Pods for testing
   end

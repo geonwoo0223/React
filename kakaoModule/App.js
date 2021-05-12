@@ -25,23 +25,7 @@ export default class App extends React.Component{
             result: result
           })
         }) .catch(err => 
-          console.log(err)
-        )
-  
-      };
-      
-      const signOutWithKakao = async () => {
-        await logout()
-        .then(res => {
-          console.log(res)
-          const result = JSON.stringify(res)
-          this.setState({
-            result: result
-          })
-        }) .catch(err => 
-          console.log(err)
-        )
-
+          console.log(err))
       };
       
       const getProfile = async () => {

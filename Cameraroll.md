@@ -12,11 +12,6 @@ yarn add fbjs
 
 
 
-1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-
-- Add `import com.reactnativecommunity.cameraroll.CameraRollPackage;` to the imports at the top of the file
-- Add `new CameraRollPackage()` to the list returned by the `getPackages()` method
-
 1. Append the following lines to
 
     
