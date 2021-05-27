@@ -46,7 +46,7 @@ export default class Pictures extends React.Component {
       .then(res => {
         for (let picture of res.edges) {
           const pictureForm = {
-            timestamp : picture.node.timestamp,
+            timestamp : picture.node.timestamp*1000,
             location : picture.node.location,
             uri: picture.node.image.uri
           }
@@ -59,13 +59,18 @@ export default class Pictures extends React.Component {
     
   }
 
+  toFormData = (item) => {
+    console.log(item)
+    const time = new Date(item.timestamp)
+    console.log("시간", time)
+  }
 
   render(){
 
 
 
     const renderdata = ({ item }) => (
-      <TouchableOpacity onPress={() => console.log(item) }>
+      <TouchableOpacity onPress={() => this.toFormData(item) }>
           <View>
             <Image 
               style={{ width: (screenWidth-6)/3, height: (screenWidth-6)/3, margin:1}} 

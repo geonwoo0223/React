@@ -204,7 +204,7 @@ dependencies {
         exclude group:'com.facebook.flipper'
     }
 
-    compile project(':@react-native-community_cameraroll')
+    implementation project(':@react-native-community_cameraroll')
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";

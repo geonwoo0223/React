@@ -11,13 +11,17 @@ import {
 } from 'react-native';
 
 import Pictures from './Pictures'
+import PicturesHorz from './PicturesHorz'
+import PicturesToVideo from './PicturesToVideo'
 
 export default class App extends React.Component {
 
   render(){
     return(
       <View>
-        <Pictures />
+        {/* <Pictures /> */}
+        {/* <PicturesHorz /> */}
+        <PicturesToVideo />
       </View>
     )
   }

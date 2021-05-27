@@ -12,6 +12,8 @@ target 'camerarollTutorial' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-ffmpeg', :path => '../node_modules/react-native-ffmpeg'
+
   target 'camerarollTutorialTests' do
     inherit! :complete
     # Pods for testing
